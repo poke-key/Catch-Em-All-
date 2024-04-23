@@ -16,5 +16,10 @@ namespace Catch_Falling_Objects
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
