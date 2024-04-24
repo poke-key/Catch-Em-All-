@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Media;
 
 namespace Catch_Falling_Objects
 {
@@ -20,6 +22,12 @@ namespace Catch_Falling_Objects
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SystemSounds.Asterisk.Play();
+            MessageBox.Show("Drag each Pokemon Sprite into it's corresponding generation within the alotted time. See how high you can get your score!");
         }
     }
 }
