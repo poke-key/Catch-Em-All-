@@ -59,12 +59,7 @@ namespace Catch_Falling_Objects
                 Controls.Add(pictureBox1);
 
              //   pictureBox1.Location = new Point(i * 100 * 200);
-
-                
-
             }
-        
-        
         }
 
 
