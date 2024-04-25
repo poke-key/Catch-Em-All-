@@ -21,6 +21,8 @@ namespace Catch_Falling_Objects
         public Form1()
         {
             InitializeComponent();
+            LoadPokemonSprites();
+            displayRandPkmn();
         }
         private void LoadPokemonSprites() 
         
@@ -46,11 +48,34 @@ namespace Catch_Falling_Objects
         }
 
         /*want to display a random pokemon to the pictureBox UI on the Windows Form*/
-        private void displayRandPkmn() { }
+        private void displayRandPkmn() {
+
+            for (int i = 0; i < 1;  i++) {
+
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; //zoom in on the pic so it's not small
+
+                pictureBox1.Image = getRandPkmnImage();
+
+                Controls.Add(pictureBox1);
+
+             //   pictureBox1.Location = new Point(i * 100 * 200);
+
+                
+
+            }
+        
+        
+        }
 
 
         /*generate a random pokemon number*/
-        private void getRandPkmnImage() { }
+        private Image getRandPkmnImage() {
+
+            int index = random.Next(pokemonImages.Count);
+            return pokemonImages[index];
+
+
+        }
 
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
