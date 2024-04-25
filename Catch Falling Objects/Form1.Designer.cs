@@ -76,7 +76,7 @@ namespace Catch_Falling_Objects
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1071, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1071, 36);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,9 +148,9 @@ namespace Catch_Falling_Objects
             this.label4.Location = new System.Drawing.Point(858, 37);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.Size = new System.Drawing.Size(40, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "15:00";
+            this.label4.Text = "5:00";
             // 
             // pictureBox1
             // 
